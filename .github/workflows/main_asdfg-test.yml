@@ -24,8 +24,6 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm fund
-          npm audit fix
           npm run build --if-present
           npm run test --if-present
 
@@ -54,5 +52,5 @@ jobs:
         with:
           app-name: 'asdfg-test'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45535EF7DF7B46A6B05AF39D1D7E9531 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29322ACE6A5145938011A57EF9EFBCF2 }}
           package: .
